@@ -11,10 +11,8 @@
     flex-direction: column;
 }
 
-.practicas {
+#listaPracticas,
+#listaNormativos{
     display: none;
 }
 
-ul:hover ~.practicas {
-    display: block;
-}
