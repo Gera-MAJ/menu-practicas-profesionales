@@ -12,7 +12,7 @@ practicas.addEventListener('mouseover', ()=>{
 })
 
 //la característica mouseout es para cuando el dejan de pasar por encima con el mouse. 
-listaPracticas.addEventListener('mouseout', function(event){   
+listaPracticas.addEventListener('mouseout', ()=>{   
     listaPracticas.style.display = 'none'       
 })
 
