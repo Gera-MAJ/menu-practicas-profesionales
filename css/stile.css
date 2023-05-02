@@ -24,12 +24,13 @@ nav ul {
   nav a {
     display: block;
     padding: 10px;
-    color: #333;
+    color: #000000;
     text-decoration: none;
   }
   
   nav a:hover {
-    background-color: #ccc;
+    background-color: #4A86E8;
+    color: aliceblue;
   }
   
   nav .submenu {
