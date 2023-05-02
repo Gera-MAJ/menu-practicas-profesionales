@@ -17,10 +17,18 @@
 #listaPracticas,
 #listaNormativos{
     display: none;
+    margin-top: -10px;
+    padding: 0.5rem;
+
 }
 
 #listaPracticas,
 #listaNormativos {
     border: 2px solid black;
+}
+
+#practicas {
+    border: 2px solid black;
+    padding: 0.5rem;
 }
 

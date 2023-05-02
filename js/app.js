@@ -18,6 +18,10 @@ listaPracticas.addEventListener('mouseout', ()=>{
     listaPracticas.style.display = 'none'       
 })
 
+practicas.addEventListener('mouseout', ()=>{   
+    listaPracticas.style.display = 'none'       
+})
+
 normativos.addEventListener("mouseover", () => {
     listaNormativos.style.display = 'block'
 })
@@ -25,7 +29,11 @@ normativos.addEventListener("mouseover", () => {
 listaNormativos.addEventListener('mouseover', ()=> {
     listaNormativos.style.display = 'block'
 })
+
 listaNormativos.addEventListener("mouseout", () => {
     listaNormativos.style.display = "none"
 })
 
+normativos.addEventListener('mouseout', ()=>{   
+    listaNormativos.style.display = 'none'       
+})
