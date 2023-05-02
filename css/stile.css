@@ -12,6 +12,8 @@
 }
     .conteinerAll a {
         margin: 0.5rem;
+        padding: 0.5rem;
+        text-decoration: none;
     }
 
 #listaPracticas,
@@ -27,6 +29,15 @@
     border: 2px solid black;
 }
 
-.conteinerAll a {
-    padding: 0.5rem;
+.conteinerAll #listaPracticas ul li a{
+    text-decoration: none;
+}
+    .conteinerAll #listaPracticas ul li {
+        padding: 0.35rem;
+        list-style: none;
+    }
+
+.conteinerAll #listaNormativos li {
+    padding: 0.35rem;
+    list-style: none;
 }
