@@ -6,11 +6,15 @@
 
 .conteinerAll{
     margin: auto;
-    max-width: 1000px;
+    max-width: 1200px;
     min-width: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
+    .conteinerAll nav ul {
+      display: flex;
+      flex-direction: row;
+    }
 
 nav ul {
     list-style: none;
@@ -51,7 +55,7 @@ nav ul {
   
   /* Agregar estilos para el menú vertical */
   nav {
-    width: 500px;
+    width: 100%;
   }
   
   nav ul {
