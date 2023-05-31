@@ -1,32 +1,23 @@
 *{
   margin: 0px;
   padding: 0px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 750px){
 
-  
-  .conteinerAll nav ul{
-    
-  }
-    nav ul .has-submenu{
-      border: 1px solid black;
+  .conteinerAll{
+    padding: 1em;
+  }    
+    .has-submenu ul li a {
+      background-color: white;
+      color: black;
     }
-      nav ul li a {
-      text-align: center;
+      .has-submenu ul li a:hover {
+        color: aliceblue;
+        background-color: rgb(50, 139, 212);
       }
-        .has-submenu a {
-          background-color: #4A86E8;
-        }
-          .has-submenu ul li a {
-            background-color: aliceblue;
-          }
-          .has-submenu ul li a:hover {
-            color: black;
-            background-color: aquamarine;
-          }
-
+        
 }
 
 .conteinerAll{
@@ -44,7 +35,19 @@
       .conteinerAll .resenia {
         display: flex;
         flex-direction: column;
+        margin: 10px;
       }
+        .resenia p {
+          margin: 1em 0px;
+        }
+
+.has-submenu {
+  justify-content: center;
+}
+
+nav ul .has-submenu{
+  border: 1px solid black;
+}
 
 nav ul {
   list-style: none;
@@ -75,17 +78,21 @@ nav ul {
   nav .submenu {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0%;
+    top: 102%;
+    left: 1.5%;
+    margin: auto;
     z-index: 1;
     background-color: #f9f9f9;
     padding: 5px;
     border: 1px solid #ccc;
   }
+    .has-submenu .submenu {
+      margin: auto;
+    }
   
-  nav li:hover .submenu {
-    display: block;
-  }
+      nav li:hover .submenu {
+      display: block;
+      }
   
   /* Agregar estilos para el menú vertical */
   nav {
@@ -98,10 +105,11 @@ nav ul {
     nav ul li {
     width: 100%;
     }
-
       nav ul li {
         width: 100%;
       }
-        
+        nav ul li a {
+          text-align: center;
+        }
   
   
