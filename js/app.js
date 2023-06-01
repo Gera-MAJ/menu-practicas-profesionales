@@ -1,7 +1,3 @@
-window.onload(
-  
-)
-
 
 // Obtener todos los elementos del menú con submenús
 const menuItems = document.querySelectorAll("nav li");
