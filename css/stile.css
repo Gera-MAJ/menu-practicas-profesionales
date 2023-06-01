@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 750px){
 
-  .conteinerAll{
+  /* .conteinerAll{
     padding: 1em;
   }    
     .has-submenu ul li a {
@@ -16,7 +16,7 @@
       .has-submenu ul li a:hover {
         color: aliceblue;
         background-color: rgb(50, 139, 212);
-      }
+      } */
         
 }
 
@@ -57,11 +57,6 @@ nav ul .has-submenu{
   background-color: #f9f9f9;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
   nav ul li .submenu{
     display: none;
     width: 100%;
@@ -88,14 +83,11 @@ nav ul {
     position: absolute;
     top: 100%;
     left: 0%;
-    z-index: 1;
+    z-index: 0;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
   }
-    .has-submenu .submenu {
-      margin: auto;
-    }
-  
+    
       nav li:hover .submenu {
       display: block;
       }
@@ -107,6 +99,7 @@ nav ul {
   
   nav ul {
     width: 100%;
+    list-style: none;
   }
       nav ul li {
         width: 100%;
