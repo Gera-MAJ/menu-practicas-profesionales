@@ -30,9 +30,14 @@
   justify-content: center;
 }
     .conteinerAll nav ul {
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 0.5em;
     }
+      .nav {
+        outline: 2px solid red;
+        background-color: aqua;
+      }
       .conteinerAll .resenia {
         display: flex;
         flex-direction: column;
@@ -61,6 +66,10 @@ nav ul .has-submenu{
   nav li {
     position: relative;
   }
+    nav ul {
+    width: 100%;
+    list-style: none;
+    }
   
   nav a {
     display: block;
@@ -80,7 +89,6 @@ nav ul .has-submenu{
     top: 100%;
     left: 0;
     right: 0;
-    /* z-index: 0; */
     background-color: #f9f9f9;
     border: 1px solid #ccc;
   }
@@ -100,10 +108,7 @@ nav ul .has-submenu{
     width: 80%;
   }
   
-  nav ul {
-    width: 100%;
-    list-style: none;
-  }
+  
       nav ul li {
         width: 100%;
         margin: 0.2em;
