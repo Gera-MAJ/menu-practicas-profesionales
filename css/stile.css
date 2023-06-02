@@ -82,10 +82,18 @@ nav ul .has-submenu{
       nav ul {
         width: 100%;
         margin: 0.2em;
+        display: flex;
+        flex-direction: column;
       }
         nav ul li a {
           text-align: center;
         }
+          
+
+  .imagen1 {
+    width: 260px;
+    margin: auto;
+  }
   
 @media screen and (max-width: 500px){
   nav{
