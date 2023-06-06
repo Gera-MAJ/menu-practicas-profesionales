@@ -15,9 +15,10 @@ menuItems.forEach((menuItem) => {
 
   // Agregar un event listener para el evento "mouseout"
   menuItem.addEventListener("mouseout", () => {
-    const submenu = menuItem.querySelector(".submenu");
+    const submenu = menuItem.querySelector(".submenu a");
+    const menu = menuItem.querySelector(".submenu")
     if (submenu) {
-      submenu.style.display = "none";
+      menu.style.display = "none";
     }
   });
 });
