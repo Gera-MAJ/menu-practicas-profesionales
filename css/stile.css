@@ -7,7 +7,7 @@
 .conteinerAll{
   margin: auto;
   max-width: 1200px;
-  min-width: 400px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,9 +46,10 @@ nav ul .has-submenu{
     text-decoration: none;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
+    text-align: center;
   }
   
-  .has-submenu a:hover {
+  .has-submenu > a:hover {
     background-color: #4A86E8;
     color: aliceblue;
   }
@@ -62,7 +63,23 @@ nav ul .has-submenu{
   }
     .submenu ul {
       list-style: none;
+      border: 1px solid #ccc;
     }
+      .submenu ul li{
+        padding: 10px;
+        text-align: center;
+      }
+      .submenu ul li:hover {
+        background-color: #4A86E8;
+      }
+        .submenu ul li a {
+          text-decoration: none;
+          padding: 10px;
+          color: black;                  
+        }
+        .submenu ul li a:hover {
+          color: aliceblue;
+        }
     
    
   
