@@ -1,13 +1,17 @@
 
 // Obtener todos los elementos del menú con submenús
-const menuItems = document.querySelectorAll(".has-submenu a");
+const menuItems = document.querySelectorAll(".has-submenu");
+
+console.log(menuItems)
 
 // Recorrer cada elemento del menú y agregar un event listener para el evento "mouseover"
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener("mouseover", () => {
-    const submenu = menuItem.querySelector(".submenu");
+    const submenu = menuItem.querySelector(".has-submenu a");
+    const menu = menuItem.querySelector(".submenu")
+    console.log(submenu)
     if (submenu) {
-      submenu.style.display = "block";
+      menu.style.display = "block";
     }
   });
 
