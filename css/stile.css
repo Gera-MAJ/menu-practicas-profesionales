@@ -31,7 +31,7 @@
 
 .has-submenu {
   justify-content: center;
-  width: 100%;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,6 +41,7 @@
 nav ul .has-submenu{
   border: 1px solid #ccc;
   background-color: #f9f9f9;
+  
 }
 
   .has-submenu > a {
@@ -51,7 +52,6 @@ nav ul .has-submenu{
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     text-align: center;
-    width: 90%;
   }
   
   .has-submenu > a:hover {
