@@ -30,6 +30,7 @@
           }
 
 .has-submenu {
+
   justify-content: center;
   width: 100%;
 
@@ -78,20 +79,14 @@ nav ul .has-submenu{
     margin: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
-      nav ul {
-        width: 100%;
-        margin: 0.2em;
-        display: flex;
-        flex-direction: column;
+      nav section a {
+        text-align: center;
       }
-        nav ul li a {
-          text-align: center;
-        }
-          
 
   .imagen1 {
-    width: 260px;
+    width: 100%;
     margin: auto;
   }
   
