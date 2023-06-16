@@ -11,6 +11,10 @@
 </head>
 <body>
     <section class="conteinerAll">
+        <section class="iconRepository" id="repositorio1">
+            <img src="/img/repositorio 03.png" alt="repositorio" >
+            <p>Repositorio de Prácticas Profesionales</p>
+        </section>
         <div class="resenia">
           <h3>PRÁCTICAS PROFESIONALES</h3>
           <p>Las Prácticas Profesionales son un campo transversal e integrador en la Formación docente inicial que conjugan  saberes, experiencias y habilitan la construcción  de aprendizajes en una relación dialéctica entre teoría y práctica para fortalecer  el desarrollo del pensamiento crítico y reflexivo.</p>
@@ -64,7 +68,8 @@
                     
                   </section>
                 </div>
-            </section>
+        </nav>
+        </section>
             <style>
                 *{
               margin: 0px;
@@ -72,6 +77,27 @@
               font-family: Arial, Helvetica, sans-serif;
             }
             
+            .iconRepository {
+                position: absolute;
+                z-index: 1;
+                width: 6em;
+                top: 5%;
+                right: 10%;
+                background:#ccc;
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 0.5em;
+                transition: transform 200ms ease-in-out;
+            }
+            .iconRepository:hover {
+                transform: scale(1.15);
+                cursor: pointer;
+            }
+                .iconRepository img {
+                    position: relative;
+                    width: 100%;
+                }
+
             .conteinerAll{
               margin: auto;
               max-width: 1000px;
@@ -257,21 +283,12 @@
       }
     });
   })
-  /*
-  linksMenu.forEach((link) => {
-     link.addEventListener("click", () => {
-     const linkLi = link.querySelector(".submenu li");
-     const linkA = link.querySelector(".submenu a");
-  //con esto logramos hacer que la etiqueta LI, llame al href de la etiqueta a
-     if (linkLi) {
-     window.location.href = linkA.getAttribute('href')
-  }
+  
+  
+  const repositorio = document.getElementById("respositorio1").addEventListener("click", () => {
+    window.location.href = 'https://des-tuc.infd.edu.ar/sitio/repositorio-de-practicas-profesionales/';
   })
-  })
-  */
   </script>
-          </nav>
-    </section>
 
 </body>
 </html>
