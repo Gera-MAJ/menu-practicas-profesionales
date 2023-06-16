@@ -7,7 +7,7 @@
 .conteinerAll{
   margin: auto;
   max-width: 1200px;
-  min-width: 400px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,31 +31,30 @@
 
 .has-submenu {
   justify-content: center;
-  width: 100%;
-
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul .has-submenu{
   border: 1px solid #ccc;
   background-color: #f9f9f9;
+  
 }
 
-  nav li {
-    position: relative;
-  }
-    nav ul {
-    width: 100%;
-    list-style: none;
-    }
-  
-  nav a {
+  .has-submenu > a {
     display: block;
     padding: 10px;
     color: #000000;
     text-decoration: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    text-align: center;
   }
   
-  nav a:hover {
+  .has-submenu > a:hover {
     background-color: #4A86E8;
     color: aliceblue;
   }
@@ -68,10 +67,27 @@ nav ul .has-submenu{
     border: 1px solid #ccc;
     transition: all 200ms;
   }
-    
-    nav li:hover .submenu {
-        display: block;
+    .submenu ul {
+      list-style: none;
+      border-top: none;
+      border-bottom: 1px solid #ccc;
     }
+      .submenu ul li{
+        padding: 10px;
+        text-align: center;
+      }
+      .submenu ul li:hover {
+        background-color: #4A86E8;
+      }
+        .submenu ul li a {
+          text-decoration: none;
+          padding: 10px;
+          color: black;                  
+        }
+        .submenu ul li a:hover {
+          color: aliceblue;
+        }
+    
   
   /* Agregar estilos para el menú vertical */
   nav {
@@ -80,27 +96,24 @@ nav ul .has-submenu{
     display: flex;
     flex-direction: row;
   }
-      nav ul {
-        width: 100%;
-        margin: 0.2em;
-        display: flex;
-        flex-direction: column;
-      }
-        nav ul li a {
-          text-align: center;
-        }
-          
+    nav section {
+      margin: 0em 0.4em;
+    }
+      
 
   .imagen1 {
-    width: 260px;
+    width: 100%;
     margin: auto;
   }
   
-@media screen and (max-width: 500px){
+@media screen and (max-width: 750px){
   nav{
     flex-direction: column;
   }
   nav .submenu{
     width: 100%;
   }     
+  .has-submenu > a {
+    margin: 0.6em 0em;
+  }
 }
